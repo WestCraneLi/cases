@@ -1,0 +1,14 @@
+{
+  "name": "case",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "change": "node ./scripts/manage.js",
+    "add": "node ./scripts/article.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "WestCraneLi",
+  "license": "ISC"
+}
