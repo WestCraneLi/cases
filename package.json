@@ -9,6 +9,7 @@
     "update": "node ./scripts/update.js",
     "find": "node ./scripts/find.js",
     "ls": "node ./scripts/ls.js",
+    "color": "node ./scripts/color.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
