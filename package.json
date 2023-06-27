@@ -4,8 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "change": "node ./scripts/manage.js",
-    "add": "node ./scripts/article.js",
+    "add": "node ./scripts/add.js",
+    "del": "node ./scripts/del.js",
+    "update": "node ./scripts/update.js",
+    "find": "node ./scripts/find.js",
+    "ls": "node ./scripts/ls.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

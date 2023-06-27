@@ -1,10 +1,26 @@
 # Introduction
 
-一个自动化的工具，通过命令行，把你的项目名和项目uri输入终端，然后就会自动写入到readme.md下的case标题下，同时网页会获取新的内容，进行查看；主要用途是方便记录工作写到的一些案例，便于管理。
+一个自动化的工具，通过命令行，把你的项目名和项目 `uri`输入终端，然后就会自动写入到 `readme.md `下的 `case`标题下，同时网页会获取新的内容，进行查看。
 
-样式有问题，需要等待一下，第三方包tailwindcss和vue3以cdn形式引入
+主要用途是方便记录个人工作写到的一些案例，便于管理。
 
-* use `npm run article <title> <uri>` add your article
+由于第三方包 `tailwindcs`s和 `vue3`以 `cdn`形式引入，会受到网速影响，在开始的时候闪烁一下样式变动。
+
+# use
+
+* `npm run add <title> <uri>` 添加你的案例
+* `npm run <option>` 管理你的案例
+  * `option`
+    * `add <title> <uri>`
+    * `del <title>`
+      * 开发中
+    * `update <oldTitle> <new Title>`
+      * 开发中
+    * `find <title>`
+      * 根据名称搜索案例
+      * `bug`: 中文似乎有问题
+    * `ls`
+      * 查看全部案例
 
 # cases
 
