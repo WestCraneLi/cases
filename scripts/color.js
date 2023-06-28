@@ -6,5 +6,5 @@
     const changeStyle = input => `\x1b[${style}m${input}\x1b[0m`;
     process.stdout.write(changeStyle(` ${style} `));
   }
-  console.log('\n-----------------------');
+  console.log('\n');
 });

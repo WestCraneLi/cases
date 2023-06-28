@@ -25,8 +25,14 @@ async function addArticle() {
     };
     articleData.article.push(temp);
     await file.setJsonFileData('data/article.json', articleData);
-    await file.continueAppendFileData('Readme.md', md);
+    await file.continueAppendFileData('README.md', md);
     console.log(con.changeColor('\ncomplete!', 92));
+    let cnt = 0;
+    for (const key in temp) {
+      console.log(
+        con.changeColor(`\n${key}    ${temp[key]}`, 90 + (cnt++ % 6))
+      );
+    }
   } catch (error) {
     console.log(con.changeColor(`\nfailed! ${error}`, 91));
   }

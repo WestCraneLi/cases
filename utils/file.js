@@ -1,7 +1,7 @@
 const fs = require('fs');
 
 // TODO 异步转同步，也可以用readSyncFile
-const getJsonFileData = (filename, encoding = 'utf8') => {
+const getJsonFileData = (filename, md = false, encoding = 'utf8') => {
   return new Promise((resolve, reject) => {
     try {
       fs.readFile(filename, encoding, (err, data) => {
@@ -9,8 +9,13 @@ const getJsonFileData = (filename, encoding = 'utf8') => {
           console.error(err);
           reject(err);
         }
-        const INFO = JSON.parse(data);
-        resolve(INFO);
+        if (md) {
+          const INFO = data;
+          resolve(INFO);
+        } else {
+          const INFO = JSON.parse(data);
+          resolve(INFO);
+        }
       });
     } catch (error) {
       console.error(error);
@@ -20,9 +25,10 @@ const getJsonFileData = (filename, encoding = 'utf8') => {
 };
 
 // TODO 同步方法：writeSyncFile
-const setJsonFileData = (filename, data, encoding = 'utf8') => {
+const setJsonFileData = (filename, data, md = false, encoding = 'utf8') => {
   return new Promise((resolve, reject) => {
     try {
+      const temp = md ? data : JSON.stringify(data, null, 2);
       fs.writeFile(filename, JSON.stringify(data, null, 2), encoding, err => {
         if (err) {
           console.error(err);
