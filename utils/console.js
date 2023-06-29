@@ -12,7 +12,19 @@ function limitString(str, maxLength = 10) {
   }
 }
 
+// TODO console like table
+function printTable(data) {
+  let cnt = 0;
+  data.forEach(item => {
+    console.log('\n');
+    for (const key in item) {
+      console.log(changeColor(`${key}    ${item[key]}`, 92 + (cnt++ % 6)));
+    }
+  });
+}
+
 module.exports = {
   changeColor,
   limitString,
+  printTable,
 };

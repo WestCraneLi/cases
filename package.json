@@ -3,12 +3,16 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "bin": {
+    "case": "./bin/case.js"
+  },
   "scripts": {
     "add": "node ./scripts/add.js",
     "del": "node ./scripts/del.js",
     "update": "node ./scripts/update.js",
     "find": "node ./scripts/find.js",
     "ls": "node ./scripts/ls.js",
+    "like": "node ./scripts/like.js",
     "color": "node ./scripts/color.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

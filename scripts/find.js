@@ -10,7 +10,7 @@ if (temp.length > 0) {
   temp.forEach(t => {
     let cnt = 0;
     for (const key in t) {
-      console.log(con.changeColor(`\n${key}    ${t[key]}`, 90 + (cnt++ % 6)));
+      console.log(con.changeColor(`\n${key}    ${t[key]}`, 92 + (cnt++ % 6)));
     }
   });
 } else {

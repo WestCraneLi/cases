@@ -29,7 +29,7 @@ const setJsonFileData = (filename, data, md = false, encoding = 'utf8') => {
   return new Promise((resolve, reject) => {
     try {
       const temp = md ? data : JSON.stringify(data, null, 2);
-      fs.writeFile(filename, JSON.stringify(data, null, 2), encoding, err => {
+      fs.writeFile(filename, temp, encoding, err => {
         if (err) {
           console.error(err);
           reject(err);
