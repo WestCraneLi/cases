@@ -6,7 +6,7 @@
 
 由于第三方包 `tailwindcs`s和 `vue3`以 `cdn`形式引入，会受到网速影响，在开始的时候闪烁一下样式变动。
 
-[![pCwnADH.png](https://s1.ax1x.com/2023/06/28/pCwnADH.png)](https://imgse.com/i/pCwnADH)
+[![pCwWNRA.png](https://s1.ax1x.com/2023/06/29/pCwWNRA.png)](https://imgse.com/i/pCwWNRA)
 
 **Link: [CASES](https://cases-ten.vercel.app/)**
 
@@ -36,20 +36,21 @@
       * 查看全部案例
 
         [![pCwmDAI.png](https://s1.ax1x.com/2023/06/28/pCwmDAI.png)](https://imgse.com/i/pCwmDAI)
+      * `uri`过长会显示省略号，可使用 `find`命令详细察看
     * `color`
       * 可查看所有输出颜色配色
 
         [![pCwmdnH.png](https://s1.ax1x.com/2023/06/28/pCwmdnH.png)](https://imgse.com/i/pCwmdnH)
 * `case <commander>` ``<option>``
-  * 使用自身
-  * `npm link`
+  * 全局命令，进入到目录下， 进行 `npm link`
+  * 开发中...
 
 本地使用 `vscode`开启 `live serve`服务，打开根目录下的 `index.html`即可
 
 # 部署
 
 * 推荐使用 `github`+`vercel`部署,只要 `github`主分支有更新，`vercel`自动更新
-*  `gitflows`更新方法有待开发....
+* `gitflows`更新方法有待开发....
 
 # 参考
 
