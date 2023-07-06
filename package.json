@@ -18,5 +18,9 @@
   },
   "keywords": [],
   "author": "WestCraneLi",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "t": "^0.5.1",
+    "tt": "^1.0.3"
+  }
 }
