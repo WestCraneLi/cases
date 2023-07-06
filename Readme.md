@@ -20,9 +20,11 @@
         [![pCwmggS.png](https://s1.ax1x.com/2023/06/28/pCwmggS.png)](https://imgse.com/i/pCwmggS)
     * `del <id>`
       * 输入 `id`删除，如果是 `title`，可能会有多种重名的情况，所以推荐 `id`
+      * 将会删除本地`article`的数据和`Readme.md`下的`CASES`下的内容以及`CASE.md`下的内容
       * 后续有待开发，批量删除功能....[![pCwsQAA.jpg](https://s1.ax1x.com/2023/06/29/pCwsQAA.jpg)](https://imgse.com/i/pCwsQAA)
     * `update <oldTitle> <new Title>`
       * 开发中...
+      * 可删除后添加
     * `find <title>`
       * 根据名称搜索案例
       * `bug`: 中文似乎有问题
@@ -49,6 +51,8 @@
 
 # 部署
 
+* `git clone --branch dev https://github.com/WestCraneLi/cases.git`
+* `git` 下载 `dev`分支，因为该分支没有数据，需自行添加，然后部署到 `github`即可
 * 推荐使用 `github`+`vercel`部署,只要 `github`主分支有更新，`vercel`自动更新
 * `gitflows`更新方法有待开发....
 
@@ -59,6 +63,7 @@
 * [控制台输出文字LOGO](https://lunicode.com/bigtext)
 
 # CASES
+
 * [drawer demo](https://play.vuejs.org/#eNqlVgtv2zYQ/iuct8LOENlOshaL5gTd0gDbsEexDliDOEBpibKZSKJAUo6zwP99d3xJsaM8PBiwKN7xu+8euuN978eqGi5r1ot7E5VIXmmimK6r02nJi0pITe6JZBlZk0yKgvRBtT8tg/CDpLdMOtlwlJpXxDNKiSiVJimXLNFclL9xeDshl/2cZbq/T/qSzxdmoUWFj5nQWhT9K39SLcQtHAD7g4zmiu1tQTqpRQSxV0hyoRgIB5bRJwDaIyen5H5aEgM7XNK8Ro1G4YdpuW4QUMl5BzC647SWNcPNQKjBbXt9qcEnAJ+MbIwhuvCiWVHlVDN4I2SS8iXQpkqdTHtAQVNeMjntGSGIHZcYzYMGPqY98t44iifwCRtxsAubYQ2CkQdq25npMpqJVbAC4lkNOSgRmCc3zpC1PRjvgeIZ7pPfGUloSeZME0ow+C6OX01GFuBFgAcdgKYudkI87ECEAtsJ76gDz1ZqB+RkBDG2SXWryaiVa3hV+i63aR+GVNvqIuSWp3oRk4PxeIkliVsLhgGxewu3N6PJzVyKukyjRORCxuTr7C3+jBxqDbBdej2y1zs8POxWSrkConcxyXK2crZwGYViihGoLkonvK6V5tkdsCg1K4FlAv9MOinN+byMOLivHkiMbRd4Z7miacrLObpZrcgh/DmMgso5B7O4RcbefyFTJiNJU14DdEvdSby37C3+No3GC7Fk0lnejiXQTtgMvmR/Dr5ck7Pefk8rcDXj8+G1EiX0TQOC32xR8ZzJPysMkpr2Yu/YtEfzXNz+avawY+z7/WTBkptH9q8VfJMxLD5KpphcwpcdZBqiwbQVn3/6g61gHYSFSOsctJ8Q/sUUpM92BVT7CdwG2i09w/YX0+AhH3+r8xUkVnmnfMtbG/1pD5r92ROuN3SPhkcumGuIYjMqnhk9+1BuRVVrlm4NIdup701L3m8NhTX2X5bBV/VRikoNLvuogRMm6OCL+dJwYb+v/lWYL6zgOKksxjm8qIFxyHTZmAwqepcLmpqh4NbglZk/YUSFueJmFFJoBpiRftgYY4Fda5JpUScLHEGsGUE59CCuHDbmw1QpbwGQkxPihqJPRThwy8sURhgvoen8gyEg35Lx8B05JWwILRC+0c+26gmDmbsNa6f2y3Ennbh+4D+N9bPJzhbYxSYYXiJegdS465BcDO3JANTkMYx2cxexUiyUQd+UBRSSv6TYIm/dRha0nLOQ7TOcvoDj63owMKn9Yk1FBXSm6Jv7EPT1F4Dc4eZAltHWZcEOOFNTzdUCz8ce4LJvaYA7j9G+at8VVC70KTDDx6tGH4EWWrG0YwJWQnE7aOjM9Cpb3/9nNM6+x5+T/xtBTbBVTI6Pj90WDoMMul5MFjxNmZ1tdj7acHhuHdhb+jaL9iLzcLC/G7/Z5u63tKSlyoQssM/CEuP2eTB+s+fHKbRGamPTMnCgCKOKgVuRqHUHF3NLewWVziwYmzGJvguqm6yMqReRwnvZ1r1nk1RDs5OTbSRxuB1sMkI7LyLkLnav4PRYyi6eSJmz0MXm/Q27yyQtmGpn2PEZv/GrrlKJgJi3bPCIYf/csY1D7uQml3YJPY+JdnegsulAB5dW5TyHebEblYuXUnlYM8/D7pSjdkl5MuFSuv4P44cn2A==)
 * [卡片翻转](https://play.vuejs.org/#eNrNVctu00AU/ZVLJORE1KlTKKrcpDx2fAKSN36Mk6HOeDQzNo3SSEiIIiT6CV0UxA5Yw/+QAn/BtcfjR1qqLFiQRTJzn2fOfWTZe8L5MM9Iz+2NZSgoVyCJyviRx+icp0LBEgSJYQWxSOdgoal16LEwZVJBmNDwGCaFQd8Z1GJJEhKqZywiJ5XSHjXauS+Pn04rhWU1ijihnJMINVS7HsHSYwA0hn6ZaZj7SUZgDKOB1kA7VaWtvDFqodfJapUlpoHf39vf34Hma7g/KJ5UmLfTTDq3ezAqbVYeW+FhvKvJQprwosicJ74ieAMYRzRHV1/KidfDlymfMiK8XqnUan0q0lVWvoi8npE+LvOiuCKkXz5o0Bi4xm9pOHNNKSYwQoi1ZW7HqUDDPkWIO5qZAf7AfWNToeri6iKzsfJMNUERgFSLhBQAGhmAZduabss1FZx0euH0tNsaE7BH8AgsC9yqUDtNvNYraoyI8o5tw/r88ue7t1dfPv6++LA+e7P++h1su21UVMBAfEkjNXNh5Dh3D2FG6HSmzC3ww+OpSDMW2WGapMLFlsQ6HI13MUBDTPf2d5qKcP8dS79ev//nLAU4ELfS1Jxbp5Y6yJRKcXC0p8Ew98WUMhceHPCTG6ahzbpeO041tRuLADW2Htbic63R12fnVxeffnx7dfX50sDVgDqIx7utqcZriRKPw3qk9Q6KqESrhYujWG2dF5lUNF4gW0wRhjxK7ofEJjlhyQItcIUMi4bR/jyVVNEU3y0IZqM5KYNUBdlzHK6jmqI0Ek6E5PhodClrpeUYvYqv59Z1A4JLgGDTaGlRTyPUEGqglt6DDSQ/kGmSKQ1JpdytOE9IjOb63G6dNtBacL2Bcl/0zRgU+38TcwfrJk0dTFsljwv6cyppQBOqsFQzGkWE6UcJn5nI5RlpmYMzfCiB+LJIsglO46ltsW6pwi553ncisvmaBv8N9qOD6x5D8ye4TUJ7iwi3Imh54x9a1eC91R++55mr)
 * [loading](https://play.vuejs.org/#eNrtVLFu2zAQ/ZWDisAyEEtqkgapYwfp4qljRy+0RFmsKVIgKTuG4b3I1D9of6B7l/xNU/QzehIpWVYzFOiWBgIM8+69x3en0+28d0URrEvqjb2JjhUrDGhqyuJmLsIQSk2BS5IwsYRMytVcALC8kMrATtF0D6mSOQyQP6hSsRTatIQpIMRPCdd0eH1I60xu3rcQfwjTG9hVaWiYwZrwkmLSqJLWzP2BnrGE/iW9vrrPr67vEzuWfGsVY9R8YDmVpfH94fTGIaF7f4sFIJwq4w9+fvr8eP9lMLTh/enrKIrqAxqYhLa/2Fk8GJoXnBiKJ4DJmtENxJxoPZ176NMQJqiae7AeVd4w6GqbezWhT+ln5+Y4z1ATk5OwijpMX8MwwymCHu+//np4+PH9WxAER4TOoS+0KI2RAm5jzuIValWmWzOHFxMEjZIlIGASdjqBR2223DYlaPvger9hicnGgD1db1zjM8qWmbGxzMUSplFvO4aU0zsX+1hqw9LtqJKkAgkx/lLlsoSzpRgxNKKPMvXUBM58z8RZVDTirYlO7CkT1d9RwhSNDZMCb5K8zMU/OayGmks1hlez2cxFFiReLZUsRYJiNrm4qp4mL1VC1UhhVSWqtaZttdWkNJ+Fq/Xiz1I7ISuHOsUdaMlZgl7Oq8flw9BdaGSBPbo8wM4v3l4liz6s8fUmOmmKFywntmW6YALONHAcC6KAiZQJ7ErHfz3FTQE5UUsmDjcfcLcruk0Vyam2mo4QncAOtw4ROpUqH4OSBifTjxK6HF5bJlTD9jTs/LILtJ98Pc7eafOF/her9lluupdF9bKonv+i2v8GCZpJJA==)
